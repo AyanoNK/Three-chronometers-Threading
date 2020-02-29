@@ -1,4 +1,4 @@
-import tkinter as tk
+import threading
 import threading
 import time
 
@@ -10,16 +10,8 @@ def Timer(chronumber):
         x+=chronumber
         time.sleep(1)
         print(x)
-
-def Starter(): 
-    chrono.start()
-    chrono2.start()
-
-
-
+# https://youtu.be/IEEhzQoKtQU
 
 if __name__ == '__main__':
     chrono = threading.Thread(target=Timer(1), name='Chronometer')
-    
     chrono2 = threading.Thread(target=Timer(2), name='Chronometer2')
-    
