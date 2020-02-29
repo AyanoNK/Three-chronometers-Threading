@@ -26,10 +26,10 @@ class Application(tk.Frame):
     def Timer(chronumber):
         x = 0
         i = 1
-        while i != 0:
-            x+=chronumber
-            time.sleep(1)
-            print(x)
+    while i != 0:
+        x+=chronumber
+        time.sleep(1)
+        print(x)
 
     def timerThread():
         chrono = threading.Thread(target=Timer(1), name='Chronometer')
