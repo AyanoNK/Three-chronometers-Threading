@@ -1,2 +1,2 @@
 # Three chronometers/Threading
- Three chronometers using threading library in Python
+ Chronometers using threading and Tkinter libraries in Python.
